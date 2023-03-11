@@ -1022,6 +1022,11 @@ menu ul li a:hover{
     width: 1200px;
   }
 
+  .container .wrapper .mainRow .section-landing .contact .section-content{
+    display: flex;
+    flex-direction: column;
+  }
+
   /*========================form=======================*/
 form{
     display: flex;
@@ -1078,7 +1083,10 @@ form{
 	padding: 5px 20px;
 	height: 40px;
 	border-radius: 80px;
-	outline: none;
+	background-color: var(--scroll_color);
+    border-color: var(--white);
+    outline: none;
+    color: var(--light_txt);
 }
 
 .CONTACT_FORM .ROW2 .FORM_ITEM{
@@ -1092,7 +1100,10 @@ form{
 	height: 40px;
 	width: 465px;
 	border-radius: 80px;
-	outline: none;
+	background-color: var(--scroll_color);
+    border-color: var(--white);
+    outline: none;
+    color: var(--light_txt);
 }
 
 .CONTACT_FORM .ROW3 .FORM_ITEM{
@@ -1106,11 +1117,78 @@ form{
 	height: 100px;
     width: 465px;
 	border-radius: 20px;
-	outline: none;
+	background-color: var(--scroll_color);
+    border-color: var(--white);
+    outline: none;
+    color: var(--light_txt);
 	resize: none;
 }
 
+.contact-button{
+    background: transparent;
+}
 
+
+/*========================map=======================*/
+.map{
+    height: 370px;
+	width: 500px;
+	border-radius: 10px;
+	overflow: hidden;
+    border-color: var(--white);
+    outline: none;
+}
+
+.map iframe{
+	width: 100%;
+	height: 100%;
+    border-color: var(--white);
+    outline: none;
+}
+
+.container .wrapper .mainRow .section-landing .contact .section-content .ROW{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .wrapper .mainRow .section-landing .contact .section-content .ROW .contact-info{
+    display: flex;
+    gap: 50px;
+}
+
+.container .wrapper .mainRow .section-landing .contact .section-content .ROW .contact-info .contact-info-item a{
+    display: flex;
+    gap: 10px;
+}
+
+.container .wrapper .mainRow .section-landing .contact .section-content .ROW .contact-info .contact-info-item:hover{
+    color: var(--primary);
+}
+
+.contact-info-item-icon,
+.contact-info-title{
+    color: var(--light_txt);
+    font-weight: 800;
+    font-size: 16px;
+}
+
+.contact-info-item-icon i:hover{
+    color: var(--primary);
+}
+
+.contact-info-title:hover{
+    color: var(--primary);
+}
+
+.contact-info-subtitle{
+    color: var(--light_txt1);
+    font-size: 16px;
+}
+
+.contact-info-subtitle:hover{
+    color: var(--primary);
+}
 
 /* ====================================================================================================================
   ================================  FOOTER STYLING ||| REUSABLE CODE FOR ALL THE PAGES  ==============================================================
