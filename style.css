@@ -1016,11 +1016,99 @@ menu ul li a:hover{
 /* ====================================================================================================================
   ================================  CONTACT SECTION  ==============================================================
   ==================================================================================================================== */
-  .container .wrapper .mainRow .section-landing .contact-form{
-    background-color: gold;
+  .container .wrapper .mainRow .section-landing .contact{
+    background-color: var(--bg_bright);
     padding: 10px 0px;
     width: 1200px;
   }
+
+  /*========================form=======================*/
+form{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.gform{
+    width: 500px;
+	padding: 50px 0px;
+	background-image: url('images/1.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+    border-radius: 10px;
+}
+
+.ROW5{
+	text-align: center;
+}
+
+.ROW5 .CONTACT_TITLE{
+	font-weight: bold;
+	font-size: 25px;
+	padding-bottom: 10px;
+}
+
+.ROW5 .CONTACT_SUB_TITLE{
+	font-weight: bold;
+	padding-bottom: 10px;
+}
+
+.ROW6 .CONTACT_FORM .ROW1,
+.ROW6 .CONTACT_FORM .ROW2,
+.ROW6 .CONTACT_FORM .ROW3,
+.ROW6 .CONTACT_FORM .ROW4{
+	display: flex;
+	justify-content: center;
+}
+
+.CONTACT_FORM .ROW1{
+	display: flex;
+	gap: 10px;
+}
+
+.CONTACT_FORM .ROW1 .FORM_ITEM{
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	margin-bottom: 10px;
+}
+
+.CONTACT_FORM .ROW1 .FORM_ITEM .FORM_GROUP .FORM_CONTROL{
+	padding: 5px 20px;
+	height: 40px;
+	border-radius: 80px;
+	outline: none;
+}
+
+.CONTACT_FORM .ROW2 .FORM_ITEM{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.CONTACT_FORM .ROW2 .FORM_ITEM .FORM_GROUP .FORM_CONTROL{
+	padding: 5px 20px;
+	height: 40px;
+	width: 465px;
+	border-radius: 80px;
+	outline: none;
+}
+
+.CONTACT_FORM .ROW3 .FORM_ITEM{
+	display: flex;
+	justify-content: center;
+	margin-bottom: 10px;
+}
+
+.CONTACT_FORM .ROW3 .FORM_ITEM .FORM_GROUP .FORM_CONTROL_MESSAGE{
+	padding: 20px;
+	height: 100px;
+    width: 465px;
+	border-radius: 20px;
+	outline: none;
+	resize: none;
+}
 
 
 
