@@ -941,18 +941,45 @@ menu ul li a:hover{
     background-color: red;
     padding: 10px 0px;
     width: 1200px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .container .wrapper .description-text .title h1{
+    font-weight: 700;
+    font-size: 20px;
+  }
+
+  .container .wrapper .description-text .text{
+    display: flex;
+    gap: 10px;
+  }
+
+  .container .wrapper .description-text .text p{
+    font-size: 10px;
+    color: var(--light_txt1);
   }
 
   .container .wrapper .description-figures{
     background-color: blueviolet;
     padding: 10px 0px;
     width: 1200px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .container .wrapper .description-figures .description-card{
+    border: 1px solid var(--scroll_color);
+    margin-right: 10px;
   }
 
   .container .wrapper .quote{
     background-color: yellowgreen;
     padding: 10px 0px;
     width: 1200px;
+    display: flex;
+    justify-content: center;
   }
 
   .container .wrapper .our-team{
@@ -965,6 +992,8 @@ menu ul li a:hover{
     background-color: gold;
     padding: 10px 0px;
     width: 1200px;
+    display: flex;
+    justify-content: center;
   }
 
   
