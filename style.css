@@ -938,7 +938,6 @@ menu ul li a:hover{
   }
 
   .container .wrapper .description-text{
-    background-color: red;
     padding: 10px 0px;
     width: 1200px;
     display: flex;
@@ -946,18 +945,18 @@ menu ul li a:hover{
     gap: 30px;
   }
 
-  .container .wrapper .description-text .title h1{
-    font-weight: 700;
-    font-size: 20px;
+  .container .wrapper .description-text .title{
+    width: 1500px;
   }
 
-  .container .wrapper .description-text .text{
-    display: flex;
-    gap: 10px;
+  .container .wrapper .description-text .title h1{
+    font-weight: 700;
+    font-size: 30px;
   }
 
   .container .wrapper .description-text .text p{
-    font-size: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
     color: var(--light_txt1);
   }
 
@@ -1257,11 +1256,17 @@ footer .container .wrapper .footer .quick-links .links .link-texts{
 
 footer .container .wrapper .footer .quick-links .links .link-texts p a{
     color: var(--light_txt1);
+    display: flex;
+    gap: 10px;
 }
 
 footer .container .wrapper .footer .quick-links .links .link-texts p a:hover{
     color: var(--primary);
     text-decoration: underline;
+}
+
+footer .container .wrapper .footer .quick-links .links .link-texts p a i:hover{
+    color: var(--primary);
 }
 
 footer .container .wrapper .footer .copyright{
