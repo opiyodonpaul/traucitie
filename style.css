@@ -1048,7 +1048,7 @@ menu ul li a:hover{
     width: 300px;
     height: 300px;
     cursor: pointer;
-	box-shadow: 0 0 10px 0.5px var(--white);
+	  box-shadow: 0 0 10px 0.5px var(--white);
   }
 
   .container .wrapper .our-team .our-team-card .our-team-card-item .picture{
@@ -1235,21 +1235,126 @@ menu ul li a:hover{
   ================================  SERVICES SECTION  ==============================================================
   ==================================================================================================================== */
   .container .wrapper .mainRow .section-landing .our-specialties{
-    background-color: pink;
     padding: 10px 0px;
     width: 1200px;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px 0px;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    height: 500px;
+    cursor: pointer;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .picture{
+    position: relative;
+    height: 70%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .picture img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .text{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .text .title{
+    font-weight: 800;
+    letter-spacing: 2px;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .text .title:hover{
+    color: var(--primary);
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .text .subtitle{
+    color: var(--light_txt1);
+    font-size: 13px;
+  }
+
+  .container .wrapper .mainRow .section-landing .our-specialties .our-specialties-card .our-specialties-card-item .text .subtitle:hover{
+    color: var(--primary);
   }
   
   .container .wrapper .banner-pic{
-    background-color: purple;
     padding: 10px 0px;
-    width: 1200px;
+    width: 1350px;
+    margin-left: -70px;
+  }
+  
+  .container .wrapper .banner-pic img{
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
   }
   
   .container .wrapper .floating-cards{
-    background-color: red;
-    padding: 10px 0px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px 0px;
     width: 1200px;
+    margin-top: -200px;
+  }
+  
+  .container .wrapper .floating-cards .floating-card-item{
+    border-radius: 10px;
+    overflow: hidden;
+    width: 360px;
+    height: 300px;
+    cursor: pointer;
+    background: var(--bg_bright);
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 17px 7px var(--black);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+  }
+  
+  .container .wrapper .floating-cards .floating-card-item .icon{
+    padding-bottom: 10px;
+  }
+  
+  .container .wrapper .floating-cards .floating-card-item .icon i{
+    font-size: 40px;
+    color: var(--primary);
+  }
+  
+  .container .wrapper .floating-cards .floating-card-item .title{
+    font-weight: 700;
+    font-size: 20px;
+    padding-bottom: 10px;
+  }
+  
+  .container .wrapper .floating-cards .floating-card-item .txt{
+    color: var(--light_txt1);
+    font-size: 14px;
   }
   
   .container .wrapper .description{
