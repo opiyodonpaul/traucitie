@@ -1845,7 +1845,7 @@ footer .container .wrapper .footer .copyright .ARTKINS:hover{
           height: 100vh;
           top: 50px;
           right: 0px;
-          background-color: var(--scroll_color);
+          background-color: var(--bg_bright);
           display: flex;
           justify-items: center;
           flex-direction: column;
