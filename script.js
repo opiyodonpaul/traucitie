@@ -1,4 +1,26 @@
 /* ====================================================================================================================
+================================   NAVBAR TOGGLER ||| NAVBAR   ================================================================
+==================================================================================================================== */
+//Toggle Navbar
+var NAV_TOGGLER = document.querySelector(".NAV_TOGGLER");
+NAV_TOGGLER.addEventListener("click", () => {
+    if(document.querySelector(".NAV_TOGGLER_MENU").classList.contains("NAV_TOGGLER_CLOSE"))
+    {
+        document.querySelector(".NAV_TOGGLER_MENU").classList.remove("NAV_TOGGLER_CLOSE");
+    }
+    else
+    {
+        document.querySelector(".NAV_TOGGLER_MENU").classList.add("NAV_TOGGLER_CLOSE");
+    }
+})
+//hide NAV BAR on scroll
+window.addEventListener("scroll", () => {
+    if(document.querySelector(".NAV_TOGGLER_MENU").classList.contains("NAV_TOGGLER_CLOSE"))
+    {
+        document.querySelector(".NAV_TOGGLER_MENU").classList.add("NAV_TOGGLER_CLOSE");
+    }
+})
+/* ====================================================================================================================
   ================================   LIGHT | DARK MODE ||| RESUSABLE CODE   ==============================================================
   ==================================================================================================================== */
 
@@ -82,21 +104,21 @@ function Download(ImgSource){
 //swiper js on REVIEWS SECTION
 var swiper = new Swiper(".mySwiper", {
     slidesPerView: 2,
-    spaceBetween: 20,
-    slidesPerGroup: 2,
+    spaceBetween: 10,
+    slidesPerGroup: 1,
     loop: true,
+    autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
     grabCursor: true,
     loopFillGroupWithBlank: true,
     pagination: {
         el: ".swiper-pagination",
         clickable: true,
-    },
+      },
     navigation: {
-        nextE1: ".swiper-button-next",
-        prevE1: ".swiper-button-prev",
-    },
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
 });
-/* ====================================================================================================================
-================================   A ||| SERVICES SECTION   ================================================================
-==================================================================================================================== */
-//a

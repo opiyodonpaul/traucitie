@@ -8,14 +8,31 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon.ico">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/swiper/swiper-bundle.min.css">
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- REVIEWS SLIDER styles -->
+  <style>
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
 </head>
 <body class="DARK_MODE">
 
     <div class="main-container">
         <nav>
-            <div class="logo"><a href="index.html">Trau<span>citie.</span></a></div>
-            <menu>
+            <div class="logo"><a href="index.html"><img src="images/1.png" alt="Traucitie Image">Trau<span>citie.</span></a></div>
+            <menu class="NAV_TOGGLER_MENU /// NAV_TOGGLER_CLOSE">
                 <ul>
                     <li><a class="NAV_LI /// " href="index.html">Home</a></li>
                     <li><a class="NAV_LI /// active-link" href="about.html">About Us</a></li>
@@ -37,6 +54,11 @@
                     </li>
                 </ul>
             </menu>
+            <div class="NAV_TOGGLER">
+				<span>
+                    <i class="NAV_TOGGLER_ICON fa-solid fa-bars"></i>
+                </span>
+			</div>
         </nav>
 
         <div class="scroll_top">
@@ -79,7 +101,7 @@
                         </div>
                         <div class="section-landing">
                             <div class="about-banner">
-                                <img src="images/software-development.jpg" alt="">
+                                <img src="images/5.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -269,7 +291,44 @@
                                             </div>
                                             <div class="swiper-person">
                                                 <div class="swiper-person-image">
-                                                    <img src="images/software-development.jpg" alt="">
+                                                    <img src="images/pencil-art.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-person-txt">
+                                                    <div class="name">
+                                                        John Wilson
+                                                    </div>
+                                                    <div class="occupation">
+                                                        Web Designer
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="swiper-slide swiper-card">
+                                            <div class="swiper-txt">
+                                                <span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas inventore culpa ipsam sint tempora."
+                                            </div>
+                                            <div class="swiper-person">
+                                                <div class="swiper-person-image">
+                                                    <img src="images/desktop-app.jpg" alt="">
+                                                </div>
+                                                <div class="swiper-person-txt">
+                                                    <div class="name">
+                                                        John Wilson
+                                                    </div>
+                                                    <div class="occupation">
+                                                        Web Designer
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide swiper-card">
+                                            <div class="swiper-txt">
+                                                <span>"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas inventore culpa ipsam sint tempora."
+                                            </div>
+                                            <div class="swiper-person">
+                                                <div class="swiper-person-image">
+                                                    <img src="images/10.jpg" alt="">
                                                 </div>
                                                 <div class="swiper-person-txt">
                                                     <div class="name">
@@ -389,7 +448,9 @@
 
 
     <!--===================JS FILES=================-->
-    <script src="https://cdn.jsdeliver.net/npm/swiper/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
     <script src="script.js"></script>
     
 </body>
